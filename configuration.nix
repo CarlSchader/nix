@@ -107,6 +107,7 @@
     git
     curl
     tmux
+    ripgrep
     inputs.neovim.packages.x86_64-linux.default
     libimobiledevice
     ifuse # to mount using ifuse
