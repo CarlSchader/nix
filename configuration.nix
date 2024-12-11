@@ -44,6 +44,12 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
+  # for iphone tethering
+  services.usbmuxd = {
+    enable = true;
+    package = pkgs.usbmuxd2;
+  };
+
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
@@ -102,6 +108,8 @@
     curl
     tmux
     inputs.neovim.packages.x86_64-linux.default
+    libmobiledevice
+    ifuse # to mount using ifuse
   ];
 
   # default system editor
