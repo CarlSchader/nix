@@ -108,7 +108,7 @@
     curl
     tmux
     inputs.neovim.packages.x86_64-linux.default
-    libmobiledevice
+    libimobiledevice
     ifuse # to mount using ifuse
   ];
 
